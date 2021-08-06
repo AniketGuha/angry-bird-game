@@ -8,6 +8,7 @@ var pig1,pig2
 var log1,log2,log3,log4
 var bird
 var bgImg
+var platform
 
 function preload(){
 
@@ -38,6 +39,8 @@ box5 = new Box(810,160,70,70);
  log4 = new Log(870,120,150,-PI/7);
 
  bird = new Bird(100,100);
+
+ platform=new Ground(150,305,300,170);
 }
 
 function draw() {
@@ -56,5 +59,5 @@ box5.display();
 log3.display();
 log4.display();
 bird.display();
-
+platform.display()
 }
